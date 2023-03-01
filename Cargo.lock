@@ -4041,6 +4041,7 @@ dependencies = [
  "pallet-balances",
  "pallet-grandpa",
  "pallet-randomness-collective-flip",
+ "pallet-storage",
  "pallet-sudo",
  "pallet-template",
  "pallet-timestamp",
@@ -4362,6 +4363,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "pallet-storage"
+version = "4.0.0-dev"
+dependencies = [
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+]
+
+[[package]]
 name = "pallet-sudo"
 version = "4.0.0-dev"
 source = "git+https://github.com/paritytech/substrate.git?branch=polkadot-v0.9.37#946507ba9ef13e263534176b7b74e26fc56efbd4"
@@ -4382,6 +4397,7 @@ dependencies = [
  "frame-benchmarking",
  "frame-support",
  "frame-system",
+ "pallet-storage",
  "parity-scale-codec",
  "scale-info",
  "sp-core",
